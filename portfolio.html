@@ -1,24 +1,84 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+           
+            text-align: center;
+            max-width: 800px;
+        }
+        header {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .profile-img {
+            height: 150px;
+            width: 150px;
+        
+        }
+        .projects, .contact, .skills, .education, .internship {
+            text-align: left;
+            margin-top: 20px;
+        }
+       
+    </style>
 </head>
 <body>
-    <h1>Portfolio</h1>
-    <h2>About Me</h2>
-    <p>Name:Rahul Naik</p>
-    <p>College:Mangalore Institute of Technology and engineering</p>
-    <p>Semester:8</p>
-    
-    <h2>Projects</h2>
-    <ul>
-        <li>Project 1 - Library Management System</li>
-        <li>Project 2 - corn leaf disease detection</li>
-        
-    </ul>
-    <footer>
-    <h2>Contact</h2>
-    <p><strong>Email:rahul.naik.5099@gmail.com</p>
-    </footer>
+    <header>
+        My Portfolio
+    </header>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img" style="float: right;">
+        <h2>Rahul Naik</h2>
+        <p>Web Developer</p>
+    <div class="education">
+        <h2 style="text-decoration: underline;">Education</h>
+        <h3>Bachelor"s of Engineering</h3>
+        <p>Mangalore Institue of Technology and Engineering</p>
+        <h3>Senior Secondary</h3>
+        <p>Premier Science college</p>
 
+    </div>
+        <div class="projects">
+            <h2 style="text-decoration: underline;">Projects</h2>
+            <ul>
+                <li>Project 1 - Library managementSystem</li>
+                <li>Project 2 - Corn Leaf disease Detection </li>
+                <li>Project 3 - Fake Logo Detection</li>
+            </ul>
+        </div>
+        
+        <div class="skills">
+            <h2 style="text-decoration: underline;">Skills</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>C , Java</li>
+            </ul>
+        </div>
+        <div class="internship">
+            <h2 style="text-decoration: underline;">Internship</h2>
+            <ul>
+                <li>Nuclear Power Corporation of India</li>
+                <li>Intern in Dlithe</li>
+            </ul>
+        </div>
+        
+       
+        <div class="contact">
+            <h3>Contact Me</h3>
+            <p>Email: rahul.naik.5099@gmail.com</p>
+            <p>Github:<a href="https://github.com/rahul3218">https://github.com/rahul3218</a></p>
+            <p>mobile: 8431525478</p>
+        </div>
+    </div>
 </body>
 </html>
