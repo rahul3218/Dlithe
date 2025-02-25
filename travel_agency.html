@@ -13,6 +13,35 @@
             background-color:white;
         
         }
+        h3 {
+            transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
+        }
+        p {
+            transition: all 0.5s ease-in-out;
+            
+        }
+        .slider-container {
+            align-items: center;
+            width: 900px;
+            margin: auto;
+        }
+        .price-display {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        p:hover {
+            font-size: 15px;
+            color: red;
+            background-color: white;
+            transform: scale(1.0) ; 
+        }
+        h3:hover {
+            font-size: 20px;
+            color: red;
+            background-color: white;
+            transform: scale(1.0) ;
+        }
         .container {
             padding: 20px;
             text-align: left;
@@ -26,14 +55,36 @@
             width: 100%;
         }
     </style>
+    
 </head>
 <body>
     <header>
         <h1 style="text-decoration: underline;">Travel Agency</h1>
     </header>
+
+    <h2>Select Price Range</h2>
+    <div class="slider-container">
+        <input type="range" id="priceRange" min="0" max="10000" step="100" value="500" oninput="updatePrice()">
+        <div class="price-display">Price: Rs.<span id="priceValue">500</span></div>
+    </div>
+
+    <script>
+        function updatePrice() {
+            let slider = document.getElementById("priceRange");
+            let priceValue = document.getElementById("priceValue");
+            priceValue.textContent = slider.value;
+        }
+    </script>
+
     <div class="container">
-        <h2><button type="button">Booking Tickets</button></h2>
-        <h2><button type="button">Booking Hotels</button></h2>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Booking Tickets</a></button></li>
+                <li><a href="#">Hotels bookings</a></li>
+                <li><a href="#">Taxi Booking</a></li>
+            </ul>
+        </nav>
+       
         <h2>Destinations</h2>
         <h3>Bangalore</h3>
      
